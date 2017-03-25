@@ -12,7 +12,7 @@ void setup() {
   
   cp5 = new ControlP5(this);
   
-  cp5.addSlider("Voltage", 0, 255, 0, 100, 50, 200, 25); 
+  cp5.addSlider("Voltage", 0, 255, 0, 100, 50, 200, 100); 
   
   println(Arduino.list());
   
@@ -33,6 +33,6 @@ void draw() {
 public void Voltage(int val) {
    //arduino.analogWrite(3, val);
    fill(0);
-   text(val, 100, 95);
+   //text(val, 100, 95);
    v = val;
 }
